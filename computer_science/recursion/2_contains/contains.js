@@ -1,5 +1,5 @@
 const contains = function(object, find) {
-  for (let [key, value] of Object.entries(object)) {
+  for (let value of Object.values(object)) {
     if (value === find || Number.isNaN(value) && Number.isNaN(find)) {
       return true
     } else if (typeof value === "object" && value !== null) {
